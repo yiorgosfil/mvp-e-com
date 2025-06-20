@@ -4,8 +4,8 @@ dotenv.config()
 import express from 'express'
 import cors from 'cors'
 
-// import productRoutes from './routes/products'
-// import categoryRoutes from './routes/categories'
+import productRoutes from './routes/products'
+import categoryRoutes from './routes/categories'
 
 const app = express()
 
@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 // Routes
-// app.use('/products', productRoutes)
-// app.use('/categories', categoryRoutes)
+app.use('/products', productRoutes)
+app.use('/categories', categoryRoutes)
 
 //Server
 const PORT = process.env.PORT || 3000
