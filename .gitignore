@@ -1,4 +1,5 @@
 # Root-level node_modules (if using shared tooling or scripts)
+**/node_modules/
 node_modules/
 
 # Environment variables
@@ -34,9 +35,6 @@ Thumbs.db
 # Frontend (client/)
 ##############################
 
-# Dependencies
-client/node_modules/
-
 # Vite output directory
 client/dist/
 
@@ -53,9 +51,6 @@ client/build/
 ##############################
 # Backend (server/)
 ##############################
-
-# Dependencies
-server/node_modules/
 
 # Build output (if transpiling, e.g., with Babel or TypeScript)
 server/dist/
