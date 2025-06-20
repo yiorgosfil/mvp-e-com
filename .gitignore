@@ -1,0 +1,79 @@
+# Root-level node_modules (if using shared tooling or scripts)
+node_modules/
+
+# Environment variables
+.env
+.env.*
+client/.env
+server/.env
+
+# Allow example env files
+!.env.example
+!client/.env.example
+!server/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+
+##############################
+# Frontend (client/)
+##############################
+
+# Dependencies
+client/node_modules/
+
+# Vite output directory
+client/dist/
+
+# Coverage (e.g., Vitest, Jest)
+client/coverage/
+
+# Build cache
+client/.vite/
+client/.cache/
+
+# React-specific (optional if you're using CRA at some point)
+client/build/
+
+##############################
+# Backend (server/)
+##############################
+
+# Dependencies
+server/node_modules/
+
+# Build output (if transpiling, e.g., with Babel or TypeScript)
+server/dist/
+server/build/
+
+# Logs and temporary files
+server/coverage/
+server/tmp/
+server/pids/
+server/*.pid
+
+# TypeScript build info
+server/*.tsbuildinfo
+
+# PM2 process files (if using)
+server/ecosystem.config.js
+server/pids/
+
+# Ignore local uploads or storage dirs (if applicable)
+server/uploads/
+server/storage/
